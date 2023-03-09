@@ -1,17 +1,9 @@
-import model.Root;
-import service.impl.JsonServiceImpl;
+import view.GamePlanView;
 
 public class Main {
     public static void main(String[] args) {
-        JsonServiceImpl parser = new JsonServiceImpl();
-        Root root1 = parser.parse();
-
-        System.out.println(root1.toString());
-
-        System.out.println("\n3 week break\n");
-
-        Root root2 = parser.changePlaces();
-        System.out.println(root2.toString());
-
+        GamePlanView gamePlanView1 = new GamePlanView();
+        gamePlanView1.gamePlanForFirstRound();
+        gamePlanView1.gamePlanForSecondRound();
     }
 }
