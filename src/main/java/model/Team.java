@@ -40,8 +40,8 @@ public class Team {
 
     @Override
     public String toString() {
-        return "\n" + date + '\'' +
-                ";" + team_1 + '\'' +
+        return "\n" + date +
+                ";" + team_1 +
                 ";" + team_2;
     }
 }
