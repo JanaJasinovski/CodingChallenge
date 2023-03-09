@@ -1,0 +1,24 @@
+{
+  "teams": [
+    {
+      "date": "17.10.2020 17:00",
+      "team_1": "Best marketing",
+      "team_2": "Hot operations"
+    },
+    {
+      "date": "17.10.2020 17:00",
+      "team_1": "Selfish sales",
+      "team_2": "Curious devops"
+    },
+    {
+      "date": "17.10.2020 17:00",
+      "team_1": "Roaming partners",
+      "team_2": "Whatever comes next"
+    },
+    {
+      "date": "17.10.2020 17:00",
+      "team_1": "Best marketing",
+      "team_2": "Curious devops "
+    }
+  ]
+}
