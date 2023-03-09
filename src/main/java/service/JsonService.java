@@ -6,4 +6,6 @@ public interface JsonService {
 
     Root parse();
     Root changePlaces();
+
+    Root playCommands();
 }
