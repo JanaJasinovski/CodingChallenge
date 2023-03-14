@@ -1,47 +1,33 @@
 package model;
 
+import java.util.Objects;
+
 public class Team {
-    private String date;
-    private String team_1;
-    private String team_2;
+    private final String name;
 
-    public Team(String date, String team_1, String team_2) {
-        this.date = date;
-        this.team_1 = team_1;
-        this.team_2 = team_2;
+    public Team(String name) {
+        this.name = name;
     }
 
-    public Team() {
+    public String getName() {
+        return name;
     }
 
-    public String getDate() {
-        return date;
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Team team = (Team) o;
+        return Objects.equals(name, team.name);
     }
 
-    public void setDate(String date) {
-        this.date = date;
-    }
-
-    public String getTeam_1() {
-        return team_1;
-    }
-
-    public void setTeam_1(String team_1) {
-        this.team_1 = team_1;
-    }
-
-    public String getTeam_2() {
-        return team_2;
-    }
-
-    public void setTeam_2(String team_2) {
-        this.team_2 = team_2;
+    @Override
+    public int hashCode() {
+        return Objects.hash(name);
     }
 
     @Override
     public String toString() {
-        return "\n" + date +
-                ";" + team_1 +
-                ";" + team_2;
+        return name;
     }
 }

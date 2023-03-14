@@ -1,10 +1,8 @@
-import view.GamePlanView;
+import controller.MatchController;
 
 public class Main {
-    public static void main(String[] args) {
-        GamePlanView gamePlanView1 = new GamePlanView();
-        gamePlanView1.playCommandsView();
-//        gamePlanView1.gamePlanForFirstRound();
-//        gamePlanView1.gamePlanForSecondRound();
+    public static void main(String[] args) throws Exception {
+        MatchController controller = new MatchController();
+        controller.printMatches();
     }
 }

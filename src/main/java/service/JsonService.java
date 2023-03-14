@@ -1,11 +1,8 @@
 package service;
 
-import model.Root;
+import model.Match;
 
 public interface JsonService {
 
-    Root parse();
-    Root changePlaces();
 
-    Root playCommands();
 }
